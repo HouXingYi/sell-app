@@ -87,6 +87,7 @@ app.use(hotMiddleware)
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
+
 var uri = 'http://localhost:' + port
 
 var _resolve
@@ -104,7 +105,6 @@ devMiddleware.waitUntilValid(() => {
   _resolve()
 })
 
-port = 8082;
 var server = app.listen(port)
 
 module.exports = {
