@@ -104,6 +104,7 @@ devMiddleware.waitUntilValid(() => {
   _resolve()
 })
 
+port = 8082;
 var server = app.listen(port)
 
 module.exports = {
